@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form>
+        <label for="">Student Name</label>
+        <br>
+        <input type="text" required minlength="2">
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <label for="">Student Email</label>
+        <br>
+        <input type="email">
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <label for="">Student Date of birth</label>
+        <br>
+        <input type="date">
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <label for="">Address</label>
+        <br>
+        <textarea cols="20" rows="4"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <label for="">Gender</label>
+        <input type ="radio" name="gender">Male
+        <input type ="radio" name="gender">Female
+        <br>
+        <br>
+        <label for="">Select course</label>
+        <select>
+            <option>Mern stack</option>
+            <option>Data Science </option>
+            <option>Data Analytics</option>
+            <option>Deveops</option>
+            <option>UX UI</option>
+        </select>
+        <br><br>
+        <label for="">Select College</label>
+        <input type="text" list="college">
+        <datalist id="college">
+            <option>JIIT</option>
+            <option>IMS</option>
+            <option>Amity</option>
+        </datalist>
+        <br><br>
+        <input type="checkbox" id="terms">
+        <label for=" terms">Accept terms & condition</label>
+        <br><br>
+        <details>
+            <summary>View terms &condition</summary>
+            <p>Lorem 13 </p>
+        </details>
+
+
+
+        
+    </form>
+
+</body>
+</html>
