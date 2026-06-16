@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        }
+
+        .container{
+            width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: #ff4d6d;
+        }
+
+        label{
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #ffb3c1;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .btn{
+            width: 100%;
+            padding: 12px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: #e63956;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2> Movie Ticket Booking</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Select Movie</label>
+        <select>
+            <option>RRR</option>
+            <option>HOUSEFULL 5</option>
+            <option>JAWAN</option>
+            <option>AVENGERS</option>
+        </select>
+
+        <label>Show Date</label>
+        <input type="date">
+
+        <label>Number of Tickets</label>
+        <input type="number" min="1" max="10">
+
+        <label>Seat Type</label>
+        <select>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platinum</option>
+        </select>
+
+        <button class="btn">Book Ticket</button>
+    </form>
+
+</div>
+
+</body>
+</html>

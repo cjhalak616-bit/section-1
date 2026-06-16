@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .heading {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: rgb(32, 32, 63);
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+
+        }
+
+        body {
+            background: #f5f7ff;
+            padding: 10px;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA5wMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBAUH/8QALBAAAgIBAwQCAAUFAQAAAAAAAAECEQMhMVEEEhNBMmEicYGRoUJSsdHwFP/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AP1Iy1waB0c3O6dFLKNnNtwdSKNMgAAhSASxYAAAJWBYbnswQcnUTHT9LKdOWi/k+hDHGCqKJurhCCjsbSLRTKo3Rzbcttv8hvvemyNJUgIkUAAAAAAAAAAAAAAA+SLIQ2y1ZGk9yCwM+OtY6fRNfaOlksDNg2kn6KsaYHIqTfxTZ6seGPB6ceJLZIlWPFj6XJPV6I9mHpoQ1at8ndRSRqiKRVaUaIigDnJ3+GP6llK/wx/cijWxBUgUAQAAAAAAszKaXsDQOLzJezm+pRR6rRGzxvqkZfU/YK91kPD/AOn7AK85CkZplGAQCizNhsDcWdoM8tnSE6A9+OjvFnhhkO8MiMrj1einFZEa8i5CuhmUvUd+TPc38dPs0kkiAo0aCAAAhQFks5zyqPsDpZzllUUeXJ1EnorPPLvkUr05OqrY88+pkzm8bvUdjXoMsyyzZlylya7CdoGNX7FGqfBGnwUZoFsAekyypp7MAYDNNEoDLIaaJQECLRaAibRtTkvzNY8E5+qPVi6SK+btkXHHF5Mnw/c9mPFSuTtnSEVFUlSN0RUSKUAADE5KP+gNM5yyJaLV8GJOU9XouCqNAZcpz90jPiT3O1FoDl4o+kPGuDrQoEcvGuCPGjrQoEcHhjwZeCPB6KFAjyPp4+kc5dOvs91EopHznhktv5B73BcAEfPePhV+TL2y5Z7OwvZ9IVI8VS4HbJ/0nuUDXZ9CkeDxTeyNx6eb+j29tFSIR5Y9Lr+J2d4YIR2idUjQVmMTYKQAAAH6kclHVs5tuf1Eo1Obuo6/ZhR1t6vk3GK9I0BlIpQBAUEEAAAAAQFIUQhp7EAgAAxRaBQAQFoCo0jHekR5AV1KcPIuR5FyQdy2efzLkx5reltlHqbVamXkW0VbOSUpbukdFFUBKk3+J2boqVAAACAAAAAAMhSAAAAIUgAMpPYEBWCjm3RlzS9nmnmr2cZZmyleuWWvZzlmr2eRyk9zNNhK9L6j7M+dnBRZ0hhnJ7BF8zKpzl8VZ3x9Gt5t3wenHijD4qgsebFgnL5yPVjxKK0OnalsVIiiWhQABQCAQAAAAAJYtFACwAAIQUgAFIAAYI2UD4/aVY29j2rDHg2scVsjVSPFHBN+jrHpf7metRLQWOMMEF6O0YJGkjSIREigAUAAAAQARyOc8sV7KOtoy2eWfUpcHnydVwxCve8kV7MPNFHzZdRJnN5cnIiV9R54hZkfK8k+Qs0luUr66yo2po+THqDvjz/ZIV9FMtnmx5EztF2FbBLFgUjYsEAEKUZLRQtwCRaBQAAsgAjkjDyoo62RyPPLOkcZ9TWwhXreVLc5T6hL2eSU8k9kyLDN6yYRvL1XpanneSctjuun/wCQeBfZUeZxk9yrGdJYX6bOUoyiUXtRO0qkLAy4mXE6mWBxcQpOL3OjRiSA9GDL9nuxZLPkRfa0e7BOyaPoJgxBmyNYpAAAAApQABLAIrLkzm5sgKmuU5yOGTJIArLOO5/Jv9D048UEtgBq46xijSSAIqtGWgAMtaHDJFABHlzJRdoiANI0RlAEMMADDO/TvYoA9+E7AGWlAAAAAf/Z);
+            background-size: cover;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            background: white;
+            padding: 30px;
+            width: 320px;
+            height: 440px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #0000001a;
+        }
+
+        .card h2 {
+            text-align: center;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .card ul {
+            font-size: large;
+            margin-bottom: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 20px;
+        }
+
+        .btn-submit {
+
+            display: block;
+            border: none;
+            border: 1px solid #353535;
+            height: 40px;
+            width: 160px;
+            margin: 20px auto;
+            background-color: white;
+            color: rgb(153, 146, 146);
+            margin-top: auto;
+            font-size: large;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            background-color: #2570fa;
+            color: white;
+        }
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            /* margin: 30px; */
+        }
+
+        /* From Uiverse.io by ClawHack1 */
+
+        /* Genel stil */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+            margin: 10px;
+        }
+
+        /* Giriş stil */
+        .toggle-switch .toggle-input {
+            display: none;
+        }
+
+        /* Anahtarın stilinin etrafındaki etiketin stil */
+        .toggle-switch .toggle-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 24px;
+            background-color: #2196F3;
+            border-radius: 34px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Anahtarın yuvarlak kısmının stil */
+        .toggle-switch .toggle-label::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+        .toggle-switch .toggle-input:checked+.toggle-label {
+            background-color: #4CAF50;
+        }
+
+        .toggle-switch .toggle-input:checked+.toggle-label::before {
+            transform: translateX(16px);
+        }
+
+        /* Light tema */
+        .toggle-switch.light .toggle-label {
+            background-color: #BEBEBE;
+        }
+
+        .toggle-switch.light .toggle-input:checked+.toggle-label {
+            background-color: #9B9B9B;
+        }
+
+        .toggle-switch.light .toggle-input:checked+.toggle-label::before {
+            transform: translateX(6px);
+        }
+
+        /* Dark tema */
+        .toggle-switch.dark .toggle-label {
+            background-color: #4B4B4B;
+        }
+
+        .toggle-switch.dark .toggle-input:checked+.toggle-label {
+            background-color: #717171;
+        }
+
+        .toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+            transform: translateX(16px);
+        }
+
+        /* From Uiverse.io by ClawHack1 */
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Choose your plan</h1>
+        <p>Be the first to know when boardme launches. Early access users will receive</p>
+        <p> an extended free trial and early bird pricing options.</p>
+    </div>
+    <!-- From Uiverse.io by ClawHack1 -->
+    <div class="toggle-container">
+        <span>Billed Monthly</span>
+        <div class="toggle-switch">
+            <input class="toggle-input" id="toggle" type="checkbox">
+            <label class="toggle-label" for="toggle"></label>
+        </div>
+        <span>Billed Annually</span>
+    </div>
+    <div class="pricing-container">
+        <!-- Free Plan -->
+        <div class="card">
+            <div>
+                <h2>Free</h2>
+                <div class="price">$0</div>
+                <ul>
+                    <li> 500 Requests</li>
+                    <li> Unlimited Projects</li>
+                    <li> Free Trial</li>
+                </ul>
+            </div>
+            <button class="btn-submit">Create Account</button>
+        </div>
+        <!-- Standard Plan -->
+        <div class="card">
+            <div>
+                <h2>Standard</h2>
+                <div class="price">$99/month</div>
+
+                <ul>
+                    <li> 2500 Requests</li>
+                    <li> Unlimited Projects</li>
+                    <li> Extended Free Trial</li>
+                </ul>
+            </div>
+
+            <button class="btn-submit">Create Account</button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card">
+            <div>
+                <h2>Enterprise</h2>
+                <div class="price">Let's Talk!</div>
+
+                <ul>
+                    <li> 500 Requests</li>
+                    <li> Unlimited Projects</li>
+                    <li> Extended Free Trial</li>
+                </ul>
+            </div>
+
+            <button class="btn-submit">Create Account</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
