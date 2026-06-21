@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body class="bg-blue-100 md:bg-red-100 xl:bg-green-100">
-    <header>
-
-
-    </header>
+  <body class="">
+    <header class="text-gray-600 body-font">
+  <div class="  container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Tailblocks</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">First Link</a>
+      <a class="mr-5 hover:text-gray-900">Second Link</a>
+      <a class="mr-5 hover:text-gray-900">Third Link</a>
+      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
 
     <main>
         <article>
-            <section class="container mx-auto ">
+            <section class="px-5 md:px-0 container mx-auto ">
                 <div class=" grid grid-cols-1 md:grid grid-cols-2 ">
                     <div class="space-y-6 my-auto text-center md:text-left">
-                        <h1 class="text-6xl font-semibold">Hero section title<br>should be here</h1>
+                        <h1 class="text-3xl md:text-6xl font-semibold">Hero section title should be here</h1>
                         <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate sint quas animi molestiae nostrum adipisci illo repellat
                              ducimus, eligendi est quam ipsa, cumque libero. Sint incidunt culpa vero nulla consequuntur! ipsum dolor sit amet consectetur adipisicing elit. Quod veniam labore natus dicta.</p>
                         <div class="flex gap-4">
@@ -26,10 +44,46 @@
                         </div>
                 
                     </div>
-                    <div>
+                    <div class="order-first md:order-last">
                         <img src="hero.svg" alt="">
                     </div>
                 </div>
+
+
+            </section>
+        </article>
+
+        <article>
+            <section class="px-5 md:px-0 container mx-auto">
+                <h2 class="text-center text-4xl text-semibold">Our Features</h2>
+                <div div class="mt-10 grid grid-cols-3">
+                    <div class=" bg-white p-6 space-y-4 rounded-xl shadow-lg text-center hover:scale-110 duration-300">
+                        <i class="fa-light fa-rocket fa-5x"></i>
+                        <h3 class="text-2xl font-semibold">Card title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tempora aliquid aperiam saepe alias asperiores nobis similique, necessitatibus accusantium illum dolor. 
+                            Inventore dolor illum ipsum consequatur veritatis quasi magni labore.</p>
+                            <button class="bg-violet-500 p-3 text-white w-full rounded-lg"> View Details</button>
+                   </div>
+                   </div>
+                   <div class=" bg-white p-6 space-y-4 rounded-xl shadow-lg text-center hover:scale-110 duration-300">
+                        <i class="fa-light fa-rocket fa-5x"></i>
+                        <h3 class="text-2xl font-semibold">Card title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tempora aliquid aperiam saepe alias asperiores nobis similique, necessitatibus accusantium illum dolor. 
+                            Inventore dolor illum ipsum consequatur veritatis quasi magni labore.</p>
+                            <button class="bg-violet-500 p-3 text-white w-full rounded-lg"> View Details</button>
+                   </div>
+                   <div class=" bg-white p-6 space-y-4 rounded-xl shadow-lg text-center hover:scale-110 duration-300">
+                        <i class="fa-light fa-rocket fa-5x"></i>
+                        <h3 class="text-2xl font-semibold">Card title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tempora aliquid aperiam saepe alias asperiores nobis similique, necessitatibus accusantium illum dolor. 
+                            Inventore dolor illum ipsum consequatur veritatis quasi magni labore.</p>
+                            <button class="bg-violet-500 p-3 text-white w-full rounded-lg"> View Details</button>
+                   </div>
+                
+
+                
+                   
+
 
 
             </section>
